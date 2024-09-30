@@ -82,7 +82,7 @@ class HumanName(object):
     """
 
     _count = 0
-    _members = ['title', 'first', 'middle', 'given', 'last', 'suffix', 'nickname']
+    _members = ['title', 'first', 'middle', 'last', 'suffix', 'nickname']
     unparsable = True
     _full_name = ''
 

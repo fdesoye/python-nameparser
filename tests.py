@@ -200,6 +200,10 @@ class HumanNamePythonTests(HumanNameTestBase):
         hn = HumanName("John Edgar Casey Williams III")
         self.m(hn.surnames, "Edgar Casey Williams", hn)
 
+    def test_given_names(self):
+        hn = HumanName("Dr. Juan Q. Xavier de la Vega")
+        self.m(hn.given, "Juan Q. Xavier", hn)
+
     def test_is_prefix_with_list(self):
         hn = HumanName()
         items = ['firstname', 'lastname', 'del']
